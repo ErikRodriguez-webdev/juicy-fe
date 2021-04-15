@@ -7,6 +7,8 @@ export const data = [
     id: 1,
     image: b1,
     imageAlt: "healthy skin",
+    imageW: "264px",
+    imageH: "398px",
     title: "Fruit makes you glow",
     texts: [
       "Yes, fruits will helps make your skin look positively glorious. The antioxidants in fruit help combat aging, while the water content hydrates our skin from the inside out.",
@@ -16,6 +18,8 @@ export const data = [
   {
     id: 2,
     image: b2,
+    imageW: "248px",
+    imageH: "372px",
     imageAlt: "working out with weights",
     title: "Fruit helps you grow",
     texts: [
@@ -26,6 +30,8 @@ export const data = [
   {
     id: 3,
     image: b3,
+    imageW: "481px",
+    imageH: "320px",
     imageAlt: "healthy decisions",
     title: "Fruit lowers the risk of developing disease",
     texts: [

@@ -40,7 +40,10 @@ function App() {
       </section>
 
       <section className="benefit">
-        <h3>Juicy Benefits</h3>
+        <div className="title">
+          <h3>Juicy Benefits</h3>
+        </div>
+
         {data.map((groupObj) => (
           <BenefitCards key={groupObj.id} data={groupObj} />
         ))}
