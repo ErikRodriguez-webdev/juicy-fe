@@ -39,15 +39,17 @@ function App() {
         </div>
       </section>
 
-      <section className="benefit">
-        <div className="title">
-          <h3>Juicy Benefits</h3>
-        </div>
+      <div className="bg">
+        <section className="benefit">
+          <div className="title">
+            <h3>Juicy Benefits</h3>
+          </div>
 
-        {data.map((groupObj) => (
-          <BenefitCards key={groupObj.id} data={groupObj} />
-        ))}
-      </section>
+          {data.map((groupObj) => (
+            <BenefitCards key={groupObj.id} data={groupObj} />
+          ))}
+        </section>
+      </div>
     </div>
   );
 }

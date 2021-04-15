@@ -15,11 +15,6 @@ html {
   color: #ffffff;
 }
 
-/* temp for background */
-body {
-  background: cadetblue;
-}
-
 h1 {
   font-weight: 800;
   font-size: 2.8rem;
@@ -86,6 +81,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Background Section */
+.bg {
+  background: linear-gradient(
+    180deg,
+    #a3b794 0%,
+    #6c8559 51.56%,
+    #384031 79.17%,
+    #000000 100%
+  );
 }
 
 /* Benefits Section */
