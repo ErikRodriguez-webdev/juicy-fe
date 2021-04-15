@@ -25,6 +25,32 @@ h2 {
   font-size: 9.6rem;
 }
 
+h3 {
+  font-weight: 900;
+  font-size: 6.4rem;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+li {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+p {
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Section styles starting here */
 
 /* Home Section */
@@ -55,4 +81,37 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Background Section */
+.bg {
+  background: linear-gradient(
+    180deg,
+    #a3b794 0%,
+    #6c8559 51.56%,
+    #384031 79.17%,
+    #000000 100%
+  );
+}
+
+/* Benefits Section */
+.benefitCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0;
+}
+
+.textCont {
+  width: 30%;
+  margin: 0 2%;
+}
+
+.textCont h4 {
+  margin-bottom: 2%;
+}
+
+.benefitCard img {
+  border-radius: 25px;
+  box-shadow: 0px 0px 50px 15px rgba(0, 0, 0, 0.3);
 }

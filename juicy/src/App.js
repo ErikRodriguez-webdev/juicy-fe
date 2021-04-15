@@ -1,3 +1,8 @@
+// components
+import BenefitCards from "./components/BenefitCards.js";
+// data structure
+import { data } from "./utils/structures/BenefitStructure.js";
+// stylesheet
 import "./index.css";
 // assets
 import hero1 from "./assets/images/juicy_hero_2_by_AleksandarPasaric_from_Pexels.jpeg";
@@ -33,6 +38,18 @@ function App() {
           <img src={scrollDown} alt="scroll down" />
         </div>
       </section>
+
+      <div className="bg">
+        <section className="benefit">
+          <div className="title">
+            <h3>Juicy Benefits</h3>
+          </div>
+
+          {data.map((groupObj) => (
+            <BenefitCards key={groupObj.id} data={groupObj} />
+          ))}
+        </section>
+      </div>
     </div>
   );
 }
