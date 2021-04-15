@@ -1,6 +1,6 @@
 import b1 from "../../assets/images/juicy_benefits_1_by_ChloeAmaya_from_pexels.jpeg";
-import b2 from "../../assets/images/juicy_benefits_1_by_ChloeAmaya_from_pexels.jpeg";
-import b3 from "../../assets/images/juicy_benefits_1_by_ChloeAmaya_from_pexels.jpeg";
+import b2 from "../../assets/images/juicy_benefits_2_by_LenaShekhovtsova_from_pexels.jpeg";
+import b3 from "../../assets/images/juicy_benefits_3_by_AndresAyrton_from_pexels.jpeg";
 
 export const data = [
   {
