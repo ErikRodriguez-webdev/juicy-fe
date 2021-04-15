@@ -1,3 +1,8 @@
+// components
+import BenefitCards from "./components/BenefitCards.js";
+// data structure
+import { data } from "./utils/structures/BenefitStructure.js";
+// stylesheet
 import "./index.css";
 // assets
 import hero1 from "./assets/images/juicy_hero_2_by_AleksandarPasaric_from_Pexels.jpeg";
@@ -32,6 +37,13 @@ function App() {
         <div className="botCont">
           <img src={scrollDown} alt="scroll down" />
         </div>
+      </section>
+
+      <section className="benefit">
+        <h3>Juicy Benefits</h3>
+        {data.map((groupObj) => (
+          <BenefitCards key={groupObj.id} data={groupObj} />
+        ))}
       </section>
     </div>
   );
