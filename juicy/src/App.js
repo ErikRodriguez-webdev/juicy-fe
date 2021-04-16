@@ -68,7 +68,7 @@ function App() {
                 well. So take the next step in powering up your lifestyle, with
                 one juicy drink at a time.
               </p>
-              <video loop autoPlay muted width="301px" height="446px">
+              <video loop autoPlay muted width="301px" height="400px">
                 <source src={shake} type="video/mp4" />
                 Browser does not support this video.
               </video>
