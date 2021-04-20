@@ -1,9 +1,11 @@
 // components
 import BenefitCards from "./components/BenefitCards.js";
 import MenuCards from "./components/MenuCards.js";
+import VideoCards from "./components/VideoCards.js";
 // data structure
 import { bdata } from "./utils/structures/BenefitStructure.js";
 import { mdata } from "./utils/structures/MenuStructure.js";
+import { vdata } from "./utils/structures/VideoStructure.js";
 // stylesheet
 import "./index.css";
 // assets
@@ -78,6 +80,12 @@ function App() {
                 <MenuCards key={iconObj.id} data={iconObj} />
               ))}
             </div>
+          </div>
+
+          <div className="videoGrid">
+            {vdata.map((videoObj) => (
+              <VideoCards key={videoObj.id} data={videoObj} />
+            ))}
           </div>
         </section>
       </div>
