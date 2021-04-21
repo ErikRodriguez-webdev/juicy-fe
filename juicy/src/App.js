@@ -2,10 +2,12 @@
 import BenefitCards from "./components/BenefitCards.js";
 import MenuCards from "./components/MenuCards.js";
 import VideoCards from "./components/VideoCards.js";
+import PlanCards from "./components/PlanCards.js";
 // data structure
 import { bdata } from "./utils/structures/BenefitStructure.js";
 import { mdata } from "./utils/structures/MenuStructure.js";
 import { vdata } from "./utils/structures/VideoStructure.js";
+import { pdata } from "./utils/structures/PlanStructure.js";
 // stylesheet
 import "./index.css";
 // assets
@@ -87,6 +89,16 @@ function App() {
               <VideoCards key={videoObj.id} data={videoObj} />
             ))}
           </div>
+        </section>
+
+        <section className="plans">
+          <div>
+            <h3 className="title">Juicy Plans</h3>
+          </div>
+
+          {pdata.map((planObj) => (
+            <PlanCards key={planObj.id} data={planObj} />
+          ))}
         </section>
       </div>
     </div>
