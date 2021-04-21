@@ -92,6 +92,10 @@ function App() {
         </section>
 
         <section className="plans">
+          <div>
+            <h3 className="title">Juicy Plans</h3>
+          </div>
+
           {pdata.map((planObj) => (
             <PlanCards key={planObj.id} data={planObj} />
           ))}
