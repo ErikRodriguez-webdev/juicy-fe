@@ -58,8 +58,8 @@ function App() {
         </section>
 
         <section className="menu">
-          <div>
-            <h3 className="title">Juicy Menu</h3>
+          <div className="title">
+            <h3>Juicy Menu</h3>
           </div>
 
           <div className="menuMain">
@@ -99,6 +99,20 @@ function App() {
           {pdata.map((planObj) => (
             <PlanCards key={planObj.id} data={planObj} />
           ))}
+        </section>
+
+        <section className="challenge">
+          <div className="title">
+            <h3>Juicy Challenge</h3>
+          </div>
+
+          <div className="challengeText">
+            <p>
+              You can still start today! It is never to late to start. We
+              challenge you to put down that carbonated beverage and try these
+              alternatives: Hot Tea, Cold Tea and Infused water.
+            </p>
+          </div>
         </section>
       </div>
     </div>
