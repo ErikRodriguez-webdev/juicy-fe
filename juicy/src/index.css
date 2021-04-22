@@ -199,3 +199,14 @@ header {
 .planCard h5 {
   color: #000000;
 }
+
+/* Challenge Section */
+.challengeText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.challengeText p {
+  width: 40%;
+}
