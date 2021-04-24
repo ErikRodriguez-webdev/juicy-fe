@@ -124,16 +124,17 @@ function App() {
             <h3>Juicy News</h3>
           </div>
 
-          <div>
+          <div className="videoCenter">
             <video loop autoPlay muted width="500px" height="600px">
               <source src={news1} type="video/mp4" />
               Browser does not support this video.
             </video>
+          </div>
 
-            {ndata.map((newsObj) => (
-              <NewsCards key={newsObj.id} data={newsObj} />
-            ))}
-
+          {ndata.map((newsObj) => (
+            <NewsCards key={newsObj.id} data={newsObj} />
+          ))}
+          <div className="videoCenter">
             <video loop autoPlay muted width="500px" height="600px">
               <source src={news2} type="video/mp4" />
               Browser does not support this video.
