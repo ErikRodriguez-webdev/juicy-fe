@@ -4,12 +4,14 @@ import MenuCards from "./components/MenuCards.js";
 import VideoCards from "./components/VideoCards.js";
 import PlanCards from "./components/PlanCards.js";
 import NewsCards from "./components/NewsCards.js";
+import CreditsCard from "./components/CreditsCard.js";
 // data structure
 import { bdata } from "./utils/structures/BenefitStructure.js";
 import { mdata } from "./utils/structures/MenuStructure.js";
 import { vdata } from "./utils/structures/VideoStructure.js";
 import { pdata } from "./utils/structures/PlanStructure.js";
 import { ndata } from "./utils/structures/NewsStructure.js";
+import { cdata } from "./utils/structures/CreditsStructure.js";
 // stylesheet
 import "./index.css";
 // assets
@@ -141,6 +143,15 @@ function App() {
             </video>
           </div>
         </section>
+
+        <footer>
+          <p>Designed and Created by:</p>
+          <p>Erik Rodriguez</p>
+          <p>Images and Video from Pexel Creators by:</p>
+          {cdata.map((creditObj) => (
+            <CreditsCard key={creditObj.id} data={creditObj} />
+          ))}
+        </footer>
       </div>
     </div>
   );
