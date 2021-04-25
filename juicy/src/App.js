@@ -21,6 +21,7 @@ import scrollDown from "./assets/icons/scroll_down.png";
 import shake from "./assets/videos/juicy_shake_by_PolinaTankilevitch_from_Pexels.mp4";
 import news1 from "./assets/videos/juicy_news_1_by_KoolShooters_from_Pexels.mp4";
 import news2 from "./assets/videos/juicy_news_2_by_KoolShooters_from_Pexels.mp4";
+import water1 from "./assets/videos/juicy_water_1_by_KellyLacy_from_Pexels.mp4";
 
 function App() {
   return (
@@ -145,12 +146,30 @@ function App() {
         </section>
 
         <footer>
-          <p>Designed and Created by:</p>
-          <p>Erik Rodriguez</p>
-          <p>Images and Video from Pexel Creators by:</p>
-          {cdata.map((creditObj) => (
-            <CreditsCard key={creditObj.id} data={creditObj} />
-          ))}
+          <div className="creditsCont">
+            <p>Designed and Created by:</p>
+            <p>Erik Rodriguez</p>
+            <br />
+            <p>Images and Video from Pexel Creators by:</p>
+            {cdata.map((creditObj) => (
+              <CreditsCard key={creditObj.id} data={creditObj} />
+            ))}
+          </div>
+
+          <div className="videoCenter">
+            <video loop autoPlay muted width="33%" className="invertVideo">
+              <source src={water1} type="video/mp4" />
+              Browser does not support this video.
+            </video>
+            <video loop autoPlay muted width="33%">
+              <source src={water1} type="video/mp4" />
+              Browser does not support this video.
+            </video>
+            <video loop autoPlay muted width="33%" className="invertVideo">
+              <source src={water1} type="video/mp4" />
+              Browser does not support this video.
+            </video>
+          </div>
         </footer>
       </div>
     </div>
