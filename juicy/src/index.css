@@ -55,10 +55,19 @@ p {
   font-size: 1.8rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .title {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.videoCenter {
+  display: flex;
+  justify-content: center;
 }
 
 /* Section styles starting here */
@@ -209,4 +218,30 @@ header {
 
 .challengeText p {
   width: 40%;
+}
+
+/* News Section */
+
+.newsCard {
+  margin: 1% auto;
+  width: 40%;
+  height: 250px;
+}
+
+.newsBg {
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  box-shadow: 0px 0px 50px 15px rgba(0, 0, 0, 0.3);
+}
+
+.newsBg h4 {
+  color: #ffffff;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background: rgba(70, 70, 70, 0.5);
+  padding: 1%;
 }

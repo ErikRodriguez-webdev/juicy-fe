@@ -3,11 +3,13 @@ import BenefitCards from "./components/BenefitCards.js";
 import MenuCards from "./components/MenuCards.js";
 import VideoCards from "./components/VideoCards.js";
 import PlanCards from "./components/PlanCards.js";
+import NewsCards from "./components/NewsCards.js";
 // data structure
 import { bdata } from "./utils/structures/BenefitStructure.js";
 import { mdata } from "./utils/structures/MenuStructure.js";
 import { vdata } from "./utils/structures/VideoStructure.js";
 import { pdata } from "./utils/structures/PlanStructure.js";
+import { ndata } from "./utils/structures/NewsStructure.js";
 // stylesheet
 import "./index.css";
 // assets
@@ -15,6 +17,8 @@ import hero1 from "./assets/images/juicy_hero_2_by_AleksandarPasaric_from_Pexels
 import hero2 from "./assets/images/juicy_hero_1_by_AleksandarPasaric_from_Pexels.jpeg";
 import scrollDown from "./assets/icons/scroll_down.png";
 import shake from "./assets/videos/juicy_shake_by_PolinaTankilevitch_from_Pexels.mp4";
+import news1 from "./assets/videos/juicy_news_1_by_KoolShooters_from_Pexels.mp4";
+import news2 from "./assets/videos/juicy_news_2_by_KoolShooters_from_Pexels.mp4";
 
 function App() {
   return (
@@ -112,6 +116,29 @@ function App() {
               challenge you to put down that carbonated beverage and try these
               alternatives: Hot Tea, Cold Tea and Infused water.
             </p>
+          </div>
+        </section>
+
+        <section className="news">
+          <div className="title">
+            <h3>Juicy News</h3>
+          </div>
+
+          <div className="videoCenter">
+            <video loop autoPlay muted width="500px" height="600px">
+              <source src={news1} type="video/mp4" />
+              Browser does not support this video.
+            </video>
+          </div>
+
+          {ndata.map((newsObj) => (
+            <NewsCards key={newsObj.id} data={newsObj} />
+          ))}
+          <div className="videoCenter">
+            <video loop autoPlay muted width="500px" height="600px">
+              <source src={news2} type="video/mp4" />
+              Browser does not support this video.
+            </video>
           </div>
         </section>
       </div>
