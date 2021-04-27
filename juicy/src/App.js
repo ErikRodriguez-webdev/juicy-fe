@@ -1,3 +1,5 @@
+// sections
+import Home from "./sections/Home.js";
 // components
 import BenefitCards from "./components/BenefitCards.js";
 import MenuCards from "./components/MenuCards.js";
@@ -15,43 +17,15 @@ import { cdata } from "./utils/structures/CreditsStructure.js";
 // stylesheet
 import "./index.css";
 // assets
-import hero1 from "./assets/images/juicy_hero_2_by_AleksandarPasaric_from_Pexels.jpeg";
-import hero2 from "./assets/images/juicy_hero_1_by_AleksandarPasaric_from_Pexels.jpeg";
-import scrollDown from "./assets/icons/scroll_down.png";
 import shake from "./assets/videos/juicy_shake_by_PolinaTankilevitch_from_Pexels.mp4";
 import news1 from "./assets/videos/juicy_news_1_by_KoolShooters_from_Pexels.mp4";
 import news2 from "./assets/videos/juicy_news_2_by_KoolShooters_from_Pexels.mp4";
 import water1 from "./assets/videos/juicy_water_1_by_KellyLacy_from_Pexels.mp4";
 
-function App() {
+export default function App() {
   return (
     <div className="app">
-      <section className="home">
-        <header>
-          <h1>JUICY</h1>
-        </header>
-
-        <div className="hero">
-          <div className="heroText">
-            <h2>
-              Fresh fruit products.
-              <br />
-              Shipped to you.
-              <br />
-              Every week.
-            </h2>
-          </div>
-
-          <div className="heroImages">
-            <img src={hero1} alt="banana fruit" />
-            <img src={hero2} alt="dragon fruit" />
-          </div>
-        </div>
-
-        <div className="botCont">
-          <img src={scrollDown} alt="scroll down" />
-        </div>
-      </section>
+      <Home />
 
       <div className="bg">
         <section className="benefit">
@@ -175,5 +149,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
