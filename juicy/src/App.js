@@ -1,14 +1,13 @@
 // sections
 import Home from "./sections/Home.js";
+import Benefit from "./sections/Benefit.js";
 // components
-import BenefitCards from "./components/BenefitCards.js";
 import MenuCards from "./components/MenuCards.js";
 import VideoCards from "./components/VideoCards.js";
 import PlanCards from "./components/PlanCards.js";
 import NewsCards from "./components/NewsCards.js";
 import CreditsCard from "./components/CreditsCard.js";
 // data structure
-import { bdata } from "./utils/structures/BenefitStructure.js";
 import { mdata } from "./utils/structures/MenuStructure.js";
 import { vdata } from "./utils/structures/VideoStructure.js";
 import { pdata } from "./utils/structures/PlanStructure.js";
@@ -28,15 +27,7 @@ export default function App() {
       <Home />
 
       <div className="bg">
-        <section className="benefit">
-          <div className="title">
-            <h3>Juicy Benefits</h3>
-          </div>
-
-          {bdata.map((groupObj) => (
-            <BenefitCards key={groupObj.id} data={groupObj} />
-          ))}
-        </section>
+        <Benefit />
 
         <section className="menu">
           <div className="title">
