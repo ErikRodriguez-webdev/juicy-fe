@@ -2,12 +2,11 @@
 import Home from "./sections/Home.js";
 import Benefit from "./sections/Benefit.js";
 import Menu from "./sections/Menu.js";
+import Plan from "./sections/Plan.js";
 // components
-import PlanCards from "./components/PlanCards.js";
 import NewsCards from "./components/NewsCards.js";
 import CreditsCard from "./components/CreditsCard.js";
 // data structure
-import { pdata } from "./utils/structures/PlanStructure.js";
 import { ndata } from "./utils/structures/NewsStructure.js";
 import { cdata } from "./utils/structures/CreditsStructure.js";
 // stylesheet
@@ -27,15 +26,7 @@ export default function App() {
 
         <Menu />
 
-        <section className="plans">
-          <div>
-            <h3 className="title">Juicy Plans</h3>
-          </div>
-
-          {pdata.map((planObj) => (
-            <PlanCards key={planObj.id} data={planObj} />
-          ))}
-        </section>
+        <Plan />
 
         <section className="challenge">
           <div className="title">
