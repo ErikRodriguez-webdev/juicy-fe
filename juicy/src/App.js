@@ -1,22 +1,18 @@
 // sections
 import Home from "./sections/Home.js";
 import Benefit from "./sections/Benefit.js";
+import Menu from "./sections/Menu.js";
 // components
-import MenuCards from "./components/MenuCards.js";
-import VideoCards from "./components/VideoCards.js";
 import PlanCards from "./components/PlanCards.js";
 import NewsCards from "./components/NewsCards.js";
 import CreditsCard from "./components/CreditsCard.js";
 // data structure
-import { mdata } from "./utils/structures/MenuStructure.js";
-import { vdata } from "./utils/structures/VideoStructure.js";
 import { pdata } from "./utils/structures/PlanStructure.js";
 import { ndata } from "./utils/structures/NewsStructure.js";
 import { cdata } from "./utils/structures/CreditsStructure.js";
 // stylesheet
 import "./index.css";
 // assets
-import shake from "./assets/videos/juicy_shake_by_PolinaTankilevitch_from_Pexels.mp4";
 import news1 from "./assets/videos/juicy_news_1_by_KoolShooters_from_Pexels.mp4";
 import news2 from "./assets/videos/juicy_news_2_by_KoolShooters_from_Pexels.mp4";
 import water1 from "./assets/videos/juicy_water_1_by_KellyLacy_from_Pexels.mp4";
@@ -29,39 +25,7 @@ export default function App() {
       <div className="bg">
         <Benefit />
 
-        <section className="menu">
-          <div className="title">
-            <h3>Juicy Menu</h3>
-          </div>
-
-          <div className="menuMain">
-            <div className="leftCont">
-              <p>
-                We have a very dedicated team here at Juicy tasked to find new
-                and exciting flavors for all our customers. At Juicy, we know
-                how boring one flavor of juice can be. We solve this by rotating
-                our juice menu every week and introduce new juice flavors as
-                well. So take the next step in powering up your lifestyle, with
-                one juicy drink at a time.
-              </p>
-              <video loop autoPlay muted width="301px" height="400px">
-                <source src={shake} type="video/mp4" />
-                Browser does not support this video.
-              </video>
-            </div>
-            <div className="rightCont">
-              {mdata.map((iconObj) => (
-                <MenuCards key={iconObj.id} data={iconObj} />
-              ))}
-            </div>
-          </div>
-
-          <div className="videoGrid">
-            {vdata.map((videoObj) => (
-              <VideoCards key={videoObj.id} data={videoObj} />
-            ))}
-          </div>
-        </section>
+        <Menu />
 
         <section className="plans">
           <div>
