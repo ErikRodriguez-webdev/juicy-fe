@@ -107,8 +107,8 @@ header {
   background: linear-gradient(
     180deg,
     #a3b794 0%,
-    #6c8559 51.56%,
-    #384031 79.17%,
+    #6c8559 25.56%,
+    #384031 45.17%,
     #000000 100%
   );
 }
@@ -244,4 +244,26 @@ header {
   border-top-right-radius: 25px;
   background: rgba(70, 70, 70, 0.5);
   padding: 1%;
+}
+
+/* Credits Section */
+footer {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.creditsCont {
+  margin: 2%;
+}
+
+.creditsCont p {
+  margin: 0.5%;
+}
+
+.creditsCard {
+  color: #ffffff;
+}
+
+.invertVideo {
+  transform: rotateY(180deg);
 }
