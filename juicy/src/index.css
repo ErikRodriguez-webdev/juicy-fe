@@ -23,12 +23,12 @@ h1 {
 
 h2 {
   font-weight: 900;
-  font-size: 9.6rem;
+  font-size: 14.4rem;
 }
 
 h3 {
   font-weight: 900;
-  font-size: 6.4rem;
+  font-size: 7.5rem;
 }
 
 h4 {
@@ -84,14 +84,36 @@ header {
   padding: 3% 0 2% 3%;
 }
 
+.homeCont {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .hero {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 3%;
 }
 
-.heroImages img {
+.heroText {
+  margin-bottom: 5%;
+  visibility: hidden;
+}
+
+.heroImage {
+  padding: 2%;
+  visibility: hidden;
+}
+
+.heroImage img {
+  width: 250px;
+  height: 250px;
   border-radius: 25px;
   box-shadow: 0px 0px 50px 15px rgba(0, 0, 0, 0.3);
 }
@@ -101,6 +123,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
 }
 
 /* Background Section */

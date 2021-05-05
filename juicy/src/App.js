@@ -6,8 +6,14 @@ import Plan from "./sections/Plan.js";
 import Challenge from "./sections/Challenge.js";
 import News from "./sections/News.js";
 import Credit from "./sections/Credit.js";
+// scroll animation
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 // stylesheet
 import "./index.css";
+
+// Register plugin to prevent issues
+gsap.registerPlugin(ScrollTrigger);
 
 export default function App() {
   return (
