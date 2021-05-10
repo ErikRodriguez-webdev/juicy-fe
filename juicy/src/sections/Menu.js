@@ -11,7 +11,7 @@ import "../index.css";
 
 export default function Menu() {
   return (
-    <section className="menu">
+    <section className="menu" id="menuComponent">
       <div className="title">
         <h3>Juicy Menu</h3>
       </div>

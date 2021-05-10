@@ -19,6 +19,7 @@ export default function BenefitCards(props) {
             </ul>
           </div>
           <img
+            className="benefitImage rightToLeft"
             src={image}
             style={{ width: imageW, height: imageH }}
             alt={imageAlt}
@@ -27,6 +28,7 @@ export default function BenefitCards(props) {
       ) : (
         <div className="benefitCard">
           <img
+            className="benefitImage leftToRight"
             src={image}
             style={{ width: imageW, height: imageH }}
             alt={imageAlt}

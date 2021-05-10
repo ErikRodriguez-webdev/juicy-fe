@@ -148,13 +148,14 @@ header {
 .textCont {
   width: 30%;
   margin: 0 2%;
+  visibility: hidden;
 }
 
 .textCont h4 {
   margin-bottom: 2%;
 }
 
-.benefitCard img {
+.benefitImage {
   border-radius: 25px;
   box-shadow: 0px 0px 50px 15px rgba(0, 0, 0, 0.3);
 }
