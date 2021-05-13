@@ -13,7 +13,6 @@ export default function Benefit() {
     scrollTrigger: {
       start: "top+=20% 90%",
       end: "+=5% 50%",
-      markers: true,
       scrub: 1,
     },
   });
