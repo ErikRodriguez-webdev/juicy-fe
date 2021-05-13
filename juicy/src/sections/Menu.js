@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 // components
 import MenuCards from "../components/MenuCards.js";
-import VideoCards from "../components/VideoCards.js";
 // data structure
 import { mdata } from "../utils/structures/MenuStructure.js";
 // import { vdata } from "../utils/structures/VideoStructure.js";
@@ -16,6 +15,7 @@ export default function Menu() {
   const textRef = useRef(null);
   const videoRef = useRef(null);
 
+  // scroll animation timeline
   const menuContTl = gsap.timeline();
 
   useEffect(() => {
@@ -48,7 +48,7 @@ export default function Menu() {
         "-=0.5"
       );
 
-    // menu cards animation
+    // menu cards reveal animation
     menuContTl.staggerTo(
       ".cardReveal",
       1.5,
@@ -59,7 +59,6 @@ export default function Menu() {
           trigger: ".stepsGrid",
           start: "top-=10% 90%",
           end: "+=5% 50%",
-          markers: true,
           scrub: 2,
         },
       },
@@ -94,15 +93,9 @@ export default function Menu() {
             Browser does not support this video.
           </video>
         </div>
-        {/* <div className="rightCont">
-          
-        </div> */}
       </div>
 
       <div className="stepsGrid">
-        {/* {vdata.map((videoObj) => (
-          <VideoCards key={videoObj.id} data={videoObj} />
-        ))} */}
         {mdata.map((iconObj) => (
           <MenuCards key={iconObj.id} data={iconObj} />
         ))}
