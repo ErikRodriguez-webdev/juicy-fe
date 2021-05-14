@@ -229,6 +229,7 @@ header {
   height: 325px;
   margin: 1% 0;
   border-radius: 25px;
+  visibility: hidden;
 }
 
 .planCard h5 {
