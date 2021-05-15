@@ -248,6 +248,9 @@ header {
 }
 
 /* News Section */
+.newsGrid {
+  margin: 3% 0 15% 0;
+}
 
 .newsCard {
   margin: 1% auto;
