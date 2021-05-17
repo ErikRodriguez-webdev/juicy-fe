@@ -17,7 +17,7 @@ export default function News() {
   const newsContTl = gsap.timeline();
 
   useEffect(() => {
-    // news video slide animation
+    // news articles reveal animation
     newsContTl.staggerFrom(
       ".newsCard",
       3,
@@ -31,7 +31,7 @@ export default function News() {
           scrub: 2,
         },
       },
-      0.5
+      1
     );
   }, [newsContTl]);
   return (
