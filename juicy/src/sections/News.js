@@ -1,19 +1,17 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 // components
 import NewsCards from "../components/NewsCards.js";
 // data structure
 import { ndata } from "../utils/structures/NewsStructure.js";
 // assets
 import news1 from "../assets/videos/juicy_news_1_by_KoolShooters_from_Pexels.mp4";
-import news2 from "../assets/videos/juicy_news_2_by_KoolShooters_from_Pexels.mp4";
 // scroll animation
-import gsap, { Bounce } from "gsap";
+import gsap from "gsap";
 // stylesheet
 import "../index.css";
 
 export default function News() {
-  // const videoRef = useRef(null);
-
+  // News timeline
   const newsContTl = gsap.timeline();
 
   useEffect(() => {
@@ -27,7 +25,6 @@ export default function News() {
           trigger: ".news",
           start: "top+=25% center",
           end: "+=5% top",
-          markers: true,
           scrub: 2,
         },
       },
@@ -52,12 +49,6 @@ export default function News() {
           <NewsCards key={newsObj.id} data={newsObj} />
         ))}
       </div>
-      {/* <div className="videoCenter">
-        <video loop autoPlay muted width="500px" height="600px">
-          <source src={news2} type="video/mp4" />
-          Browser does not support this video.
-        </video>
-      </div> */}
     </section>
   );
 }
