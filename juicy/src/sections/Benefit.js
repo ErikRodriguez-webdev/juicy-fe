@@ -9,30 +9,59 @@ import gsap from "gsap";
 import "../index.css";
 
 export default function Benefit() {
-  const tl = gsap.timeline({
-    scrollTrigger: {
-      start: "top+=20% 90%",
-      end: "+=5% 50%",
-      scrub: 1,
-    },
-  });
+  // benefits section timeline
+  const benefitsContTl = gsap.timeline();
 
   useEffect(() => {
     // image slide animation
-    tl.from(".leftToRight", {
-      autoAlpha: 0,
-      xPercent: -50,
-      duration: 2,
-    });
-    tl.from(
+    benefitsContTl.staggerFrom(
+      ".leftToRight",
+      3,
+      {
+        autoAlpha: 0,
+        xPercent: -50,
+        scrollTrigger: {
+          trigger: "#benefitComponent",
+          start: "top 60%",
+          end: "top 5%",
+          scrub: 2,
+          // markers: true,
+        },
+      },
+      1
+    );
+    benefitsContTl.staggerFrom(
       ".rightToLeft",
-      { autoAlpha: 0, xPercent: 50, duration: 2 },
-      "-=2.0"
+      3,
+      {
+        autoAlpha: 0,
+        xPercent: 50,
+        scrollTrigger: {
+          trigger: "#benefitComponent",
+          start: "top 60%",
+          end: "top 5%",
+          scrub: 2,
+        },
+      },
+      1
     );
 
     // text fade in animation
-    tl.from(".textCont", { autoAlpha: 0 });
-  }, [tl]);
+    benefitsContTl.staggerFrom(
+      ".textCont",
+      1,
+      {
+        autoAlpha: 0,
+        scrollTrigger: {
+          trigger: "#benefitComponent",
+          start: "top 60%",
+          end: "top 5%",
+          scrub: 2,
+        },
+      },
+      0.5
+    );
+  }, [benefitsContTl]);
 
   return (
     <section className="benefit" id="benefitComponent">
