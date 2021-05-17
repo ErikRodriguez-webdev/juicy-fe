@@ -25,7 +25,6 @@ export default function Benefit() {
           start: "top 60%",
           end: "top 5%",
           scrub: 2,
-          // markers: true,
         },
       },
       1
