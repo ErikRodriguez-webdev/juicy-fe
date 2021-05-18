@@ -1,14 +1,14 @@
-import b1 from "../../assets/images/juicy_benefits_1_by_ChloeAmaya_from_pexels.jpeg";
-import b2 from "../../assets/images/juicy_benefits_2_by_LenaShekhovtsova_from_pexels.jpeg";
-import b3 from "../../assets/images/juicy_benefits_3_by_AndresAyrton_from_pexels.jpeg";
+import b1 from "../../assets/images/juicy_benefits_1_by_ChloeAmaya_from_pexels.png";
+import b2 from "../../assets/images/juicy_benefits_2_by_LenaShekhovtsova_from_pexels.png";
+import b3 from "../../assets/images/juicy_benefits_3_by_AndresAyrton_from_pexels.png";
 
 export const bdata = [
   {
     id: 1,
     image: b1,
     imageAlt: "healthy skin",
-    imageW: "264px",
-    imageH: "398px",
+    imageW: "223.33px",
+    imageH: "325.53px",
     title: "Fruit makes you glow",
     texts: [
       "Yes, fruits will helps make your skin look positively glorious. The antioxidants in fruit help combat aging, while the water content hydrates our skin from the inside out.",
@@ -18,8 +18,8 @@ export const bdata = [
   {
     id: 2,
     image: b2,
-    imageW: "248px",
-    imageH: "372px",
+    imageW: "218.38px",
+    imageH: "324.85px",
     imageAlt: "working out with weights",
     title: "Fruit helps you grow",
     texts: [
@@ -30,8 +30,8 @@ export const bdata = [
   {
     id: 3,
     image: b3,
-    imageW: "481px",
-    imageH: "320px",
+    imageW: "442.78px",
+    imageH: "391.4px",
     imageAlt: "healthy decisions",
     title: "Fruit lowers the risk of developing disease",
     texts: [
