@@ -122,9 +122,15 @@ header {
 .botCont {
   padding: 2% 0 3% 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   visibility: hidden;
+}
+
+.botCont img {
+  width: 48px;
+  height: 48px;
 }
 
 /* Background Section */

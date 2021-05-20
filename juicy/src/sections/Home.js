@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 // assets
 import hero1 from "../assets/images/juicy_hero_2_by_AleksandarPasaric_from_Pexels.jpeg";
-import scrollDown from "../assets/icons/scroll_down.png";
+// import scrollDown from "../assets/icons/scroll_down.png";
+import downArrow from "../assets/icons/down_arrow.png";
 // animation
 import gsap, { Power4 } from "gsap";
 // stylesheet
@@ -63,7 +64,8 @@ export default function Home() {
         </div>
 
         <div className="botCont" ref={scrollRef}>
-          <img src={scrollDown} alt="scroll down" />
+          <p>Scroll</p>
+          <img src={downArrow} alt="down arrow" />
         </div>
       </div>
     </section>
