@@ -9,7 +9,7 @@ export default function BenefitCards(props) {
       {/* Even cards are displayed with image on left first
     Odd cards are displayed with text on left first*/}
       {id % 2 === 0 ? (
-        <div className="benefitCard">
+        <div className="benefitCard imageRight">
           <div className="textCont">
             <h4 className="title">{title}</h4>
             <ul>
@@ -26,7 +26,7 @@ export default function BenefitCards(props) {
           />
         </div>
       ) : (
-        <div className="benefitCard">
+        <div className="benefitCard imageLeft">
           <img
             className="benefitImage leftToRight"
             src={image}

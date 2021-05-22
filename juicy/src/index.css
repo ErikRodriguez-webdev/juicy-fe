@@ -161,6 +161,9 @@ header {
   h2 {
     font-size: 3.5rem;
   }
+  h3 {
+    font-size: 3rem;
+  }
   .heroImage {
     transform: scale(0.5);
   }
@@ -201,6 +204,32 @@ header {
 
 .benefitImage {
   filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+}
+
+@media screen and (max-width: 1200px) {
+  /* Tablet */
+  .benefitImage {
+    transform: scale(0.7);
+  }
+
+  .textCont {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  /* Phone */
+  .imageLeft {
+    flex-direction: column;
+  }
+
+  .imageRight {
+    flex-direction: column-reverse;
+  }
+
+  .textCont {
+    width: 85%;
+  }
 }
 
 /* Menu Section */
