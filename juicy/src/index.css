@@ -133,6 +133,42 @@ header {
   height: 48px;
 }
 
+@media screen and (max-width: 1700px) {
+  /* Laptop */
+  h2 {
+    font-size: 10.5rem;
+  }
+  .home {
+    background: black;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* Tablet */
+  h2 {
+    font-size: 7.5rem;
+  }
+  .heroImage {
+    transform: scale(0.7);
+  }
+  .home {
+    background: gray;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  /* Phone */
+  h2 {
+    font-size: 3.5rem;
+  }
+  .heroImage {
+    transform: scale(0.5);
+  }
+  .home {
+    background: blue;
+  }
+}
+
 /* Background Section */
 .bg {
   background: linear-gradient(
@@ -145,6 +181,7 @@ header {
 }
 
 /* Benefits Section */
+
 .benefitCard {
   display: flex;
   justify-content: center;
