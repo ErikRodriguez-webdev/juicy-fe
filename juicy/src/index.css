@@ -39,12 +39,12 @@ h4 {
 
 h5 {
   font-weight: 500;
-  font-size: 64px;
+  font-size: 6.4rem;
 }
 
 h6 {
   font-weight: 700;
-  font-size: 96px;
+  font-size: 9.6rem;
 }
 
 section {
@@ -331,6 +331,7 @@ header {
 .plans {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .planCard {
@@ -348,6 +349,19 @@ header {
   color: #000000;
 }
 
+@media screen and (max-width: 775px) {
+  /* Phone */
+  h5 {
+    font-size: 3rem;
+  }
+  h6 {
+    font-size: 5rem;
+  }
+  .planCard {
+    height: 150px;
+  }
+}
+
 /* Challenge Section */
 .challengeText {
   display: flex;
@@ -357,6 +371,13 @@ header {
 
 .challengeText p {
   width: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+  /* Tablet */
+  .challengeText p {
+    width: 90%;
+  }
 }
 
 /* News Section */
