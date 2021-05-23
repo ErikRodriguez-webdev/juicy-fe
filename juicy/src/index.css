@@ -409,6 +409,39 @@ header {
   padding: 1%;
 }
 
+@media screen and (max-width: 1700px) {
+  /* Laptop */
+  .newsCard {
+    width: 70%;
+  }
+  .newsGrid {
+    margin: 5% 0 20% 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* Tablet */
+  h4 {
+    font-size: 2rem;
+  }
+  .newsCard {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  /* Phone */
+  h4 {
+    font-size: 1.8rem;
+  }
+  .newsCard {
+    width: 95%;
+  }
+  .newsGrid {
+    margin: 15% 0 30% 0;
+  }
+}
+
 /* Credit Section */
 footer {
   margin-top: 5%;
@@ -424,7 +457,13 @@ footer {
 }
 
 .creditsCard {
+  margin: 0.5% auto;
+  width: 250px;
+}
+
+.creditsCard a {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .invertVideo {
