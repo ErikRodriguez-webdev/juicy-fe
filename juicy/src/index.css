@@ -47,6 +47,11 @@ h6 {
   font-size: 96px;
 }
 
+section {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 li {
   font-weight: 500;
   font-size: 1.8rem;
@@ -284,6 +289,42 @@ header {
 
 .videoCard {
   margin: 2%;
+}
+
+@media screen and (max-width: 1700px) {
+  /* Laptop */
+  .menuCont {
+    width: 65%;
+  }
+  .menuCont video {
+    margin: 3%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* Tablet */
+  .menuCont {
+    width: 80%;
+  }
+  .menuCont video {
+    margin: 5%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  /* Phone */
+  .menuCont {
+    width: 95%;
+  }
+  .menuCont video {
+    margin: 7%;
+  }
+  .stepsGrid {
+    flex-direction: column;
+  }
+  .cardReveal {
+    visibility: hidden;
+  }
 }
 
 /* Plan Section */
