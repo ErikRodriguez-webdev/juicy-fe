@@ -163,14 +163,27 @@ header {
 
 @media screen and (max-width: 775px) {
   /* Phone */
+  h1 {
+    font-size: 1.6rem;
+  }
   h2 {
     font-size: 3.5rem;
   }
   h3 {
     font-size: 3rem;
   }
-  .heroImage {
-    transform: scale(0.5);
+  header {
+    padding: 1% 0 1% 2%;
+  }
+  .heroText {
+    margin-bottom: 2.5%;
+  }
+  .heroImage img {
+    width: 150px;
+    height: 150px;
+  }
+  .botCont {
+    padding: 0.5% 0 1% 0;
   }
   .home {
     background: blue;
@@ -194,7 +207,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2% 0;
+  padding: 2.5% 0;
 }
 
 .textCont {
@@ -208,13 +221,13 @@ header {
 }
 
 .benefitImage {
-  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1700px) {
   /* Tablet */
   .benefitImage {
-    transform: scale(0.7);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
   }
 
   .textCont {
@@ -284,6 +297,8 @@ header {
   align-items: center;
   background: #3b4433;
   margin: 2% 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
   overflow: hidden;
 }
 
@@ -309,6 +324,9 @@ header {
   .menuCont video {
     margin: 5%;
   }
+  .menuCard {
+    margin: 4%;
+  }
 }
 
 @media screen and (max-width: 775px) {
@@ -319,8 +337,12 @@ header {
   .menuCont video {
     margin: 7%;
   }
+  .menuCard {
+    background: transparent;
+  }
   .stepsGrid {
     flex-direction: column;
+    background: linear-gradient(225deg, #a8cd8b 0%, #395c1e 100%);
   }
   .cardReveal {
     visibility: hidden;
