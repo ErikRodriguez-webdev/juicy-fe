@@ -39,12 +39,17 @@ h4 {
 
 h5 {
   font-weight: 500;
-  font-size: 64px;
+  font-size: 6.4rem;
 }
 
 h6 {
   font-weight: 700;
-  font-size: 96px;
+  font-size: 9.6rem;
+}
+
+section {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 li {
@@ -133,6 +138,49 @@ header {
   height: 48px;
 }
 
+@media screen and (max-width: 1700px) {
+  /* Laptop */
+  h2 {
+    font-size: 10.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* Tablet */
+  h2 {
+    font-size: 7.5rem;
+  }
+  .heroImage {
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (max-width: 775px) {
+  /* Phone */
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  header {
+    padding: 1% 0 1% 2%;
+  }
+  .heroText {
+    margin-bottom: 2.5%;
+  }
+  .heroImage img {
+    width: 150px;
+    height: 150px;
+  }
+  .botCont {
+    padding: 0.5% 0 1% 0;
+  }
+}
+
 /* Background Section */
 .bg {
   background: linear-gradient(
@@ -145,11 +193,12 @@ header {
 }
 
 /* Benefits Section */
+
 .benefitCard {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2% 0;
+  padding: 2.5% 0;
 }
 
 .textCont {
@@ -163,7 +212,33 @@ header {
 }
 
 .benefitImage {
-  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
+}
+
+@media screen and (max-width: 1700px) {
+  /* Tablet */
+  .benefitImage {
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+  }
+
+  .textCont {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  /* Phone */
+  .imageLeft {
+    flex-direction: column;
+  }
+
+  .imageRight {
+    flex-direction: column-reverse;
+  }
+
+  .textCont {
+    width: 85%;
+  }
 }
 
 /* Menu Section */
@@ -213,6 +288,8 @@ header {
   align-items: center;
   background: #3b4433;
   margin: 2% 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
   overflow: hidden;
 }
 
@@ -220,10 +297,54 @@ header {
   margin: 2%;
 }
 
+@media screen and (max-width: 1700px) {
+  /* Laptop */
+  .menuCont {
+    width: 65%;
+  }
+  .menuCont video {
+    margin: 3%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* Tablet */
+  .menuCont {
+    width: 80%;
+  }
+  .menuCont video {
+    margin: 5%;
+  }
+  .menuCard {
+    margin: 4%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  /* Phone */
+  .menuCont {
+    width: 95%;
+  }
+  .menuCont video {
+    margin: 7%;
+  }
+  .menuCard {
+    background: transparent;
+  }
+  .stepsGrid {
+    flex-direction: column;
+    background: linear-gradient(225deg, #a8cd8b 0%, #395c1e 100%);
+  }
+  .cardReveal {
+    visibility: hidden;
+  }
+}
+
 /* Plan Section */
 .plans {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .planCard {
@@ -241,6 +362,19 @@ header {
   color: #000000;
 }
 
+@media screen and (max-width: 775px) {
+  /* Phone */
+  h5 {
+    font-size: 3rem;
+  }
+  h6 {
+    font-size: 5rem;
+  }
+  .planCard {
+    height: 150px;
+  }
+}
+
 /* Challenge Section */
 .challengeText {
   display: flex;
@@ -250,6 +384,13 @@ header {
 
 .challengeText p {
   width: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+  /* Tablet */
+  .challengeText p {
+    width: 90%;
+  }
 }
 
 /* News Section */
@@ -281,6 +422,39 @@ header {
   padding: 1%;
 }
 
+@media screen and (max-width: 1700px) {
+  /* Laptop */
+  .newsCard {
+    width: 70%;
+  }
+  .newsGrid {
+    margin: 5% 0 20% 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* Tablet */
+  h4 {
+    font-size: 2rem;
+  }
+  .newsCard {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  /* Phone */
+  h4 {
+    font-size: 1.8rem;
+  }
+  .newsCard {
+    width: 95%;
+  }
+  .newsGrid {
+    margin: 15% 0 30% 0;
+  }
+}
+
 /* Credit Section */
 footer {
   margin-top: 5%;
@@ -296,7 +470,13 @@ footer {
 }
 
 .creditsCard {
+  margin: 0.5% auto;
+  width: 250px;
+}
+
+.creditsCard a {
   color: #ffffff;
+  text-decoration: none;
 }
 
 .invertVideo {
