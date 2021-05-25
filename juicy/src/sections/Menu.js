@@ -82,9 +82,10 @@ export default function Menu() {
             step in powering up your lifestyle, with one juicy drink at a time.
           </p>
           <video
-            loop
-            autoPlay
             muted
+            playsInline
+            autoPlay
+            loop
             width="301px"
             height="400px"
             ref={videoRef}

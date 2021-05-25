@@ -21,11 +21,18 @@ export default function Credit() {
       </div>
 
       <div className="videoCenter">
-        <video loop autoPlay muted width="40%">
+        <video muted playsInline autoPlay loop width="40%">
           <source src={water1} type="video/mp4" />
           Browser does not support this video.
         </video>
-        <video loop autoPlay muted width="40%" className="invertVideo">
+        <video
+          muted
+          playsInline
+          autoPlay
+          loop
+          width="40%"
+          className="invertVideo"
+        >
           <source src={water1} type="video/mp4" />
           Browser does not support this video.
         </video>
