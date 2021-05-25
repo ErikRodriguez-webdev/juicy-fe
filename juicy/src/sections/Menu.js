@@ -85,6 +85,7 @@ export default function Menu() {
             muted
             playsInline
             autoPlay
+            loop
             width="301px"
             height="400px"
             ref={videoRef}

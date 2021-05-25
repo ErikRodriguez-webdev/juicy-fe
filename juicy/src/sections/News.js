@@ -38,7 +38,7 @@ export default function News() {
       </div>
 
       <div className="videoCenter">
-        <video muted playsInline autoPlay width="500px" height="600px">
+        <video muted playsInline autoPlay loop width="500px" height="600px">
           <source src={news1} type="video/mp4" />
           Browser does not support this video.
         </video>
