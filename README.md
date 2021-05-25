@@ -11,6 +11,6 @@ Greensock
 # Credits
 [Chloe Amaya](https://www.pexels.com/@chloe-amaya-1047565), [Lena Shekhovtsova](https://www.pexels.com/@lena-shekhovtsova-827912), [Andres Ayrton](https://www.pexels.com/@andres-ayrton), [KoolShooters](https://www.pexels.com/@kool-shooters), [Polina Tankilevitch](https://www.pexels.com/@polina-tankilevitch), [Kelly Lacy](https://www.pexels.com/@kelly-lacy-1179532), [Aleksandar Pasaric](https://www.pexels.com/@apasaric)
 # License
-MIT © Juicy
+MIT © [Juicy](https://juicy-fe-erikrodriguez-webdev.vercel.app/)
 # Screenshots
 <img src="https://github.com/ErikRodriguez-webdev/juicy-fe/blob/main/juicy/src/assets/images/app_screenshot.PNG" height="40%" width="30%">
